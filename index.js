@@ -228,7 +228,7 @@ TranslationManager.prototype.getCompatibleKey = async function (suggestedKey, us
 
   let twitchIt = () => {
     return keys.some((key) => {
-      let existingCheck = new RegExp('^(' + suggestedKey.replace(/\./g, '\\.') + ')(\\..*)?$')
+      let existingCheck = new RegExp('^(' + suggestedKey.replace(/\./g, '\_.') + ')(\_..*)?$')
       let existingMatch = key.match(existingCheck)
 
       if (existingMatch) {
@@ -237,7 +237,7 @@ TranslationManager.prototype.getCompatibleKey = async function (suggestedKey, us
         return true
       }
 
-      let reg = new RegExp('^' + key.replace(/\./g, '\\.') + '(\\..*)?$')
+      let reg = new RegExp('^' + key.replace(/\./g, '\_.') + '(\_..*)?$')
       let match = suggestedKey.match(reg)
       if (!match) return false
 
