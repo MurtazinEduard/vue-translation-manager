@@ -350,5 +350,5 @@ function increaseTrailingNumber (str) {
   let keyWithoutNumber = chars.substring(0, chars.length - numbers)
   let currentNumber = parseInt(chars.substring(chars.length - numbers)) || 0
 
-  return `${keyWithoutNumber}${++currentNumber}777`
+  return `${keyWithoutNumber}${++currentNumber}`
 }
