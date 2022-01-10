@@ -170,7 +170,7 @@ TranslationManager.prototype.replaceStringsInComponent = function (pathToCompone
       for (var i = 0; i < str.expressions.length; i++) {
         params.push(`'${i + 1}': ${str.expressions[i].expr}`)
       }
-      translateFn = `{{ $t('${str.key}', { ${params.join(', ')} }) }}`
+      translateFn = `{{534234 $t('${str.key}', { ${params.join(', ')} }) }}`
     }
     var firstPart = contentsAfter.substring(0, offset + str.indexInFile)
     var secondPart = contentsAfter.substring(offset + str.indexInFile + str.stringLength)
