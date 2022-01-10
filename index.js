@@ -199,7 +199,7 @@ TranslationManager.prototype.getSuggestedKey = async function (pathToFile, text,
   const ignoreWords = ['src', 'components', 'component', 'source', 'test']
 
   var p = path.relative(this.rootPath, pathToFile)
-  var prefix = p.replace(/\\/g, "/")
+  var prefix = p.replace(/\\/g, "_")
     .split('/')
     .filter((part) => ignoreWords.indexOf(part.trim()) < 0)
     .map((key) => key.toLowerCase().split('.')[0])
