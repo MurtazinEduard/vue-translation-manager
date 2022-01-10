@@ -1,5 +1,6 @@
 const fs = require('fs')
-const path = require('path').replace(/\\/g, "/")
+let path = require('path')
+path.replace(/\\/g, "/")
 const execall = require('execall')
 const glob = require('glob')
 const uniq = require('lodash.uniq')
