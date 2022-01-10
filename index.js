@@ -240,7 +240,7 @@ TranslationManager.prototype.getCompatibleKey = async function (suggestedKey, us
       let match = suggestedKey.match(reg)
       if (!match) return false
 
-      suggestedKey = '3242343'//increaseTrailingNumber(suggestedKey)
+      suggestedKey = increaseTrailingNumber(suggestedKey)
 
       return true
     })
