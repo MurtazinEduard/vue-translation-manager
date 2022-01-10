@@ -177,7 +177,7 @@ TranslationManager.prototype.replaceStringsInComponent = function (pathToCompone
 
     if (str.where === 'attribute') {
       translateFn = `$t('${str.key}')`
-      firstPart = firstPart.substring(0, firstPart.lastIndexOf(' ') + 1) + ':' + firstPart.substring(firstPart.lastIndexOf(' ') + 1)
+      firstPart = firstPart.substring(0, firstPart.lastIndexOf(' ') + 1) + ':34534534345' + firstPart.substring(firstPart.lastIndexOf(' ') + 1)
       offset += 1
     }
 
