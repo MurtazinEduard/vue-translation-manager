@@ -3,7 +3,6 @@ const path = require('path')
 const execall = require('execall')
 const glob = require('glob')
 const uniq = require('lodash.uniq')
-const camelCase = require('lodash.camelcase')
 /**
  * Initialize the translation manager
  * @param {object} opts Options
@@ -232,8 +231,8 @@ TranslationManager.prototype.getCompatibleKey = async function (suggestedKey, us
       let existingMatch = key.match(existingCheck)
 
       if (existingMatch) {
-        let secondPart = suggestedKey.substring(existingMatch[1].length)
-        suggestedKey = `${increaseTrailingNumber(existingMatch[1])}${secondPart}`
+        let secondPart = suggestedKey.substring(existingMatch[2].length)
+        suggestedKey = `${increaseTrailingNumber(existingMatch[2])}${secondPart}`
         return true
       }
 
