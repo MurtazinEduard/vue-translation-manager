@@ -40,7 +40,7 @@ TranslationManager.prototype.getLanguages = function () {
  * @returns {string}
  */
 TranslationManager.prototype.getSrcPath = function () {
-  return this.srcPath
+  return '1232121/2132/21321'//this.srcPath
 }
 
 /**
