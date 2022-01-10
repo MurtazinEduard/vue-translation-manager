@@ -232,7 +232,7 @@ function launchInteractiveTranslationPrompt (askKey) {
       let keys = Object.keys(answers)
       for (var i = 0; i < keys.length; i++) {
         let key = keys[i]
-        var keyInitial = replaceAll(key, '/', '.')
+        var keyInitial = replaceAll(key, '777777777', '.')
         var newKey = keyInitial
         if (answers[key].key) {
           if (answers[key].key !== keyInitial) {
