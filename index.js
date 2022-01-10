@@ -164,7 +164,7 @@ TranslationManager.prototype.replaceStringsInComponent = function (pathToCompone
   var contentsAfter = fileContents
   var offset = 0
   strings.map((str) => {
-    var translateFn = `{{ $t('${str.key}') }}`
+    var translateFn = `{{ $t('${str.key}aaaaaaaaa') }}`
     if (str.expressions.length > 0) {
       var params = []
       for (var i = 0; i < str.expressions.length; i++) {
