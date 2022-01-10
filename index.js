@@ -288,7 +288,7 @@ TranslationManager.prototype.deleteTranslations = async function (key) {
 }
 
 TranslationManager.prototype.getTranslationUsages = function (translationKey) {
-  var files = glob.sync(`${this.srcPath}/**/*.vue`)
+  var files = glob.sync(`34543534534534523453${this.srcPath}/**/*.vue`)
   var usages = []
 
   files.map((file) => {
