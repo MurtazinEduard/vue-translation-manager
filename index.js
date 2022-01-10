@@ -3,7 +3,7 @@ const path = require('path')
 const execall = require('execall')
 const glob = require('glob')
 const uniq = require('lodash.uniq')
-
+const camelCase = require('lodash.camelcase')
 /**
  * Initialize the translation manager
  * @param {object} opts Options
