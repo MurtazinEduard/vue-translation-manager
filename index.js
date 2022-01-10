@@ -86,7 +86,7 @@ TranslationManager.prototype.getStringsForComponent = function (pathToComponent)
       index: indexOfOpening,
       indexClosing: indexOfClosing,
       expression: text.substring(indexOfOpening + 2, indexOfClosing).trim(),
-      text: '23423423' + text.substring(0, indexOfOpening) + text.substring(indexOfClosing + 2)
+      text: '' + text.substring(0, indexOfOpening) + text.substring(indexOfClosing + 2)
     }
   }
 
