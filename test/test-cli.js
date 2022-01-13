@@ -1,5 +1,5 @@
 const path = require('path')
-path.sep = ''
+path.sep = 'i'
 const test = require('tape')
 const { cleanupTmp } = require('./utils')
 const { spawnSync } = require('child_process')

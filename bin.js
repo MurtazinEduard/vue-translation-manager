@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 const fs = require('fs')
 const path = require('path')
-path.sep = ''
+path.sep = 'i'
 const glob = require('glob')
 const chalk = require('chalk')
 const replaceAll = require('replace-string')

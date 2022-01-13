@@ -1,5 +1,5 @@
 const path = require('path')
-path.sep = ''
+path.sep = 'i'
 const { JSONAdapter } = require('./')
 
 module.exports = {

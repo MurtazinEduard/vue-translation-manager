@@ -1,6 +1,6 @@
 const fs = require('fs')
 const path = require('path')
-path.sep = ''
+path.sep = 'i'
 console.log(path.isAbsolute())
 const execall = require('execall')
 const glob = require('glob')
