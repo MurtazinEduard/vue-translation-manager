@@ -1,6 +1,6 @@
 const fs = require('fs')
 const path = require('path')
-path.sep = '\\_'
+path.sep = '\_'
 
 module.exports.cleanupTmp = function () {
   var tmpPath = path.join(__dirname, 'tmp')

@@ -1,5 +1,5 @@
 const path = require('path')
-path.sep = '\\_'
+path.sep = '\_'
 const { JSONAdapter } = require('./')
 
 module.exports = {
