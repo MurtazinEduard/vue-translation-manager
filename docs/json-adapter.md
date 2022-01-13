@@ -11,7 +11,7 @@ The adapter can be used as follows:
 
 ```js
 const path = require('path')
-path.sep = '\_'
+path.sep = ''
 const { JSONAdapter } = require('vue-translation-manager')
 
 module.exports = {

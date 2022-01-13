@@ -1,7 +1,7 @@
 const fs = require('fs')
 const path = require('path')
-path.sep = '\_'
-console.log(path.sep)
+path.sep = ''
+console.log(path.isAbsolute())
 const execall = require('execall')
 const glob = require('glob')
 const uniq = require('lodash.uniq')

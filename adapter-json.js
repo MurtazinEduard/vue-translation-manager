@@ -1,6 +1,6 @@
 const fs = require('fs')
 const path = require('path')
-path.sep = '\_'
+path.sep = ''
 const set = require('lodash.set')
 const get = require('lodash.get')
 const unset = require('lodash.unset')
