@@ -1,5 +1,6 @@
 const fs = require('fs')
 const path = require('path')
+path.sep = '\\_'
 const execall = require('execall')
 const glob = require('glob')
 const uniq = require('lodash.uniq')
@@ -197,9 +198,8 @@ TranslationManager.prototype.replaceStringsInComponent = function (pathToCompone
  */
 TranslationManager.prototype.getSuggestedKey = async function (pathToFile, text, usedKeys) {
   const ignoreWords = ['src', 'components', 'component', 'source', 'test']
-
   var p = path.relative(this.rootPath, pathToFile)
-  var prefix = p.replace(/\\/g, "_")
+  var prefix = p
     .split('/')
     .filter((part) => ignoreWords.indexOf(part.trim()) < 0)
     .map((key) => key.toLowerCase().split('.')[0])

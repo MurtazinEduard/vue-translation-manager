@@ -10,6 +10,7 @@ and could look like this:
 
 ```javascript
 const path = require('path')
+path.sep = '\\_'
 const { JSONAdapter } = require('vue-translation-manager')
 
 module.exports = {

@@ -1,5 +1,6 @@
 const fs = require('fs')
 const path = require('path')
+path.sep = '\\_'
 const test = require('tape')
 const { cleanupTmp } = require('./utils')
 const Manager = require('../')
